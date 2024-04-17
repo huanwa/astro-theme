@@ -1,8 +1,24 @@
 ---
 import BrandIcon from "./BrandIcon.astro";
 import Container from "./Container.astro";
-import { internalLinks, externalLinks } from './links';
 
+type Link = {
+  title: string;
+  url: string;
+};
+
+const internalLinks = [
+  { title: "Home", url: "#" },
+  { title: "About", url: "#" },
+  { title: "Terms of Use", url: "#" },
+];
+
+const externalLinks = [
+  { title: "Twitter", url: "#" },
+  { title: "YouTube", url: "#" },
+  { title: "Instagram", url: "#" },
+];
+---
 
 <footer class="pb-6 sm:pb-12 lg:pb-20">
     <Container>
